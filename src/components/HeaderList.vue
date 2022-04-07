@@ -5,6 +5,7 @@
               <a :class="{active : element.current}" href="#"> {{ element.text }} </a>
           </li>
       </ul>
+      
   </div>
 </template>
 
@@ -37,6 +38,10 @@ export default {
                 },
                 {
                     text: "Contact",
+                    current: false,
+                },
+                {
+                    text: "icona",
                     current: false,
                 },
             ]
