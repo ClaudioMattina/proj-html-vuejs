@@ -1,5 +1,5 @@
 <template>
-  <div class="my-container d-flex">
+  <div class="my-container">
 
     <div class="top-container d-flex justify-content-between">
 
@@ -18,6 +18,12 @@
             <p>YT</p>
         </div>
 
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <img src="../assets/materiale/avada-food-logo.png" alt="">
+        </div>
     </div>
       
   </div>
