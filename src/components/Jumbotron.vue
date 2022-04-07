@@ -4,7 +4,7 @@
           <div id="today-container">
               <p>TODAY'S PICK</p>
           </div>
-          <h2>Food Corner: Japanese Restaurants for Sushi</h2>
+          <h2>Food Corner: Top Japanese Restaurants for Sushi</h2>
           <p>March 25, 2019</p>
           
       </div>
@@ -23,7 +23,7 @@ export default {
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: 500px;
+        height: 700px;
         margin-top: 150px;
 
             #content-container{
@@ -41,6 +41,8 @@ export default {
                         background-color: #fc7525;
                         padding: 10px;
                         margin-bottom: 30px;
+                        border-radius: 10px;
+                        color: white;
                        }
                         
                     }
