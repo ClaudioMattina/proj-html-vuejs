@@ -20,18 +20,23 @@
 
     </div>
 
-    <div class="row mt-3">
+    <div class="row my-3">
         <div class="col-12 d-flex justify-content-center align-items-center">
             <img src="../assets/materiale/avada-food-logo.png" alt="">
         </div>
     </div>
-      
+      <HeaderList />
   </div>
 </template>
 
 <script>
+import HeaderList from './HeaderList.vue'
+
 export default {
-    name: "HeaderIndex"
+    name: "HeaderIndex",
+    components: {
+        HeaderList
+    }
 }
 </script>
 
