@@ -33,14 +33,27 @@
 
           <!-- al lato della scheda -->
           <div class="col-4">
-              <div id="img-for-comment" class="d-flex text-center justify-content-center align-items-center">
-                  <div id="comment-container" class="justify-content-center d-flex">
-                       <h3>VIEW OUR LATEST RECIPES</h3>
-                  </div>
-                 
-              </div>
+            <!-- immagine con commento centrato -->
+            <div id="img-for-comment" class="d-flex text-center justify-content-center align-items-center">
+                <div id="comment-container" class="justify-content-center d-flex">
+                    <h3>VIEW OUR LATEST RECIPES</h3>
+                </div>
+            </div>
+            <!-- immagine scheda -->
+            <div id="giuda-scheda" class="mt-5">
+                <div id="img-guida" class="">
+                    <p>City Guide: Singapore</p>
+                </div>
+                <div id="all-guide" class="d-flex justify-content-center align-items-center">
+                    <a href="#"> <span class=" me-1"><i class="fa-solid fa-earth-americas"></i></span> VIEW ALL CITY GUIDES</a>
+                </div>
+            </div>
+
+            <div id="bar" class="mb-2"></div>
           </div>
       </div>
+
+      
   </div>
 </template>
 
@@ -51,7 +64,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
     #top-content{
         margin-top: 150px;
         #paragrph-container{
@@ -65,13 +77,9 @@ export default {
             padding: 10px 20px;
         }
     }
-
-
     #container-main-scheda{
         background-color: white;
-
             #paragrafo-big-img{
-
                 #admin-p{
                     font-size: 0.8rem;
                     border-bottom: 1px dotted #afafaf;
@@ -88,21 +96,50 @@ export default {
                 }
             }
     }
-
     #img-for-comment{
         background-image: url("../assets/materiale/ad-bg.jpg");
         background-position: center;
         background-size: cover;
         width: 100%;
         height: 450px;
-
            #comment-container{
-               width: 50%;
-               
+               width: 50%;              
                  h3{
                      font-size: 1.3rem;      
                  }
            }
+    }
+    #giuda-scheda{
+        width: 100%;
+        height: 300px;
+        #img-guida{
+        width: 100%;
+        height: 200px;
+        background-image: url("../assets/materiale/singapore-featured-image.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+            p{
+                background-color: black;
+                color: white;
+                position: absolute;
+                top: 130px;
+                padding: 5px;
+            }
+        }
+        #all-guide{
+            width: 100%;
+            height: 40px;
+            background-color: #fc7525;
+            a{
+                color: white;
+                font-size: 0.8rem;
+                text-decoration: none;                
+            }
+        }
+    }
+    #bar{
+        border-bottom: 2px solid lightgray;
     }
     
     
