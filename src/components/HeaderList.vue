@@ -39,11 +39,8 @@ export default {
                 {
                     text: "Contact",
                     current: false,
-                },
-                {
-                    text: "icona",
-                    current: false,
-                },
+                },             
+
             ]
         }
     }

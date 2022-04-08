@@ -1,5 +1,7 @@
 <template>
+
   <div class="my-container">
+      
 
     <div class="top-container d-flex justify-content-between">
 
@@ -12,10 +14,10 @@
         </div>
 
         <div class="d-flex social">
-            <p>F</p>
-            <p>INS</p>
-            <p>TWI</p>
-            <p>YT</p>
+            <p><i class="fa-brands fa-facebook-f"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-youtube"></i></p>
         </div>
 
     </div>
