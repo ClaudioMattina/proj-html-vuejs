@@ -12,7 +12,7 @@
 
         <div v-for="(element, index) in imagesList" :key="index" class="col-3 my-wrapper">
           <div class="img-container">
-            <img src="../assets/materiale/drinks-recipes.png" alt="">
+            <img :src="element.url" alt="">
           </div>
           <div class="description d-flex justify-content-center align-items-center">
             <h5> {{ element.text }} </h5>
@@ -32,35 +32,35 @@ export default {
       return{
         imagesList: [
           {
-            url:"../assets/materiale/drinks-recipes.png",
+            url: require("../assets/materiale/drinks-recipes.png"),
             text:"DRINKS"
           },
           {
-            url:"../assets/materiale/soups-recipes.png",
+            url:require("../assets/materiale/soups-recipes.png"),
             text:"SOUPS"
           },
           {
-            url:"../assets/materiale/baking-recipes.png",
+            url:require("../assets/materiale/baking-recipes.png"),
             text:"BAKERY"
           },
           {
-            url:"../assets/materiale/dinner-recipes.png",
+            url:require("../assets/materiale/dinner-recipes.png"),
             text:"DINNER"
           },
           {
-            url:"../assets/materiale/healthy-recipes.png",
+            url:require("../assets/materiale/healthy-recipes.png"),
             text:"HEALTHY"
           },
           {
-            url:"../assets/materiale/staff-picks.png",
+            url:require("../assets/materiale/staff-picks.png"),
             text:"STAFF PICKS"
           },
           {
-            url:"../assets/materiale/premium-recipes.png",
+            url:require("../assets/materiale/premium-recipes.png"),
             text:"APPETISERS"
           },
           {
-            url:"../assets/materiale/quick-easy-recipes.png",
+            url:require("../assets/materiale/quick-easy-recipes.png"),
             text:"QUICK & EASY"
           },
         ]

@@ -10,7 +10,7 @@
          <div v-for="(element,index) in foodsJurnal" :key="index" class="my-card col-4 d-flex flex-column">
 
             <div class="img-container">
-               <img src="../assets/materiale/single-post-img3.jpg" alt="">
+               <img :src="element.url" alt="">
             </div>
             <div class="d-flex flex-column align-items-center text-center content-container">
                <h5 class="my-3"> {{element.text}} </h5>
@@ -31,17 +31,17 @@ export default {
         return{
             foodsJurnal:[
                 {
-                    url:"../assets/materiale/single-post-img3.jpg",
+                    url: require("../assets/materiale/single-post-img3.jpg") ,
                     text:"Food Corner: Top Japanese Restaurant Sushi",
                     paragraph:"By Admin, 1 March 25th, 2019"
                 },
                 {
-                    url:"../assets/materiale/fi-roundup.jpg",
+                    url: require("../assets/materiale/fi-roundup.jpg"),
                     text:"Rounddup: My New Favourite Recipes For Healthy Living",
                     paragraph:"By Admin, 1 March 25th, 2019"
                 },
                 {
-                    url:"../assets/materiale/fi-toasts.jpg",
+                    url: require("../assets/materiale/fi-toasts.jpg"),
                     text:"Why These Toasts whit Tea are My New Favourite",
                     paragraph:"By Admin, 1 March 25th, 2019"
                 }
