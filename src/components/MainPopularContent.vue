@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="row my-3">
+      <div class="row mb-3">
           <div  id="my-introduction" class="col-8 d-flex justify-content-center align-items-center flex-column text-center">
               <h3>POPULAR RECIPES</h3>
               <p>Aliquam eat volupat. Ut quis ligula a magna blamdit firibus. Suspendisse maximus lacus non nunc lacinia lobortis.</p>
@@ -74,7 +74,7 @@ export default {
 <style lang="scss" scoped>
     #my-introduction{
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 300px;
     }
 
     #big-card{

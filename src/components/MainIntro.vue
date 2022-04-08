@@ -54,8 +54,14 @@ export default {
 <style lang="scss" scoped>
     #main-intro-wrapper{
 
-        width: 100%;
+        width: 70%;
         background-color: white;
+        position: absolute;
+        left: 50%;
+        top: 550px;
+        transform: translate(-50%);
+        margin-bottom: 200px;
+        
         
 
             h4{

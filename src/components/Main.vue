@@ -3,9 +3,11 @@
 
     <div class="my-container">
 
-      <MainIntro />
+      
       
       <MainPopularContent />
+
+      <MainCollectionContent />
 
     </div>
 
@@ -15,22 +17,23 @@
 
 
 <script>
-import MainIntro from './MainIntro.vue'
+
+
 import MainPopularContent from './MainPopularContent.vue'
+import MainCollectionContent from './MainCollectionContent.vue'
 
 export default {
     name: "MainIndex",
     components:{
-      MainIntro,
-      MainPopularContent
+      MainPopularContent,
+      MainCollectionContent
     }
 }
 </script>
 
 <style lang="scss" scoped>
     #my-main{
-      /* background-color: #f6f7f1; */
-      background-color: aquamarine;
+      background-color: #f6f7f1;
     }
 
     .my-container{
