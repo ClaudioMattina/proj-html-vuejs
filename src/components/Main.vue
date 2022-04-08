@@ -9,6 +9,8 @@
 
       <MainCollectionContent />
 
+      <MainContent />
+
     </div>
 
   </div>
@@ -21,12 +23,14 @@
 
 import MainPopularContent from './MainPopularContent.vue'
 import MainCollectionContent from './MainCollectionContent.vue'
+import MainContent from './MainContent.vue'
 
 export default {
     name: "MainIndex",
     components:{
       MainPopularContent,
-      MainCollectionContent
+      MainCollectionContent,
+      MainContent
     }
 }
 </script>
