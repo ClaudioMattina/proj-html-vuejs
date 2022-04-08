@@ -1,5 +1,5 @@
 <template>
-  <div id="main-intro-wrapper">
+  <div id="main-intro-wrapper" class="shadow">
      <div class="row p-4">
          <div class="col-12 d-flex justify-content-center align-items-center mb-3">
              <div class="my-border"></div>
@@ -56,6 +56,7 @@ export default {
 
         width: 100%;
         background-color: white;
+        
 
             h4{
                 margin: 0px 20px;

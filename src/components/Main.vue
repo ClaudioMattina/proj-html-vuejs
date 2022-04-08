@@ -4,6 +4,8 @@
     <div class="my-container">
 
       <MainIntro />
+      
+      <MainPopularContent />
 
     </div>
 
@@ -14,11 +16,13 @@
 
 <script>
 import MainIntro from './MainIntro.vue'
+import MainPopularContent from './MainPopularContent.vue'
 
 export default {
     name: "MainIndex",
     components:{
-      MainIntro
+      MainIntro,
+      MainPopularContent
     }
 }
 </script>
