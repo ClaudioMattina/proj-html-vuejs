@@ -15,6 +15,7 @@
 
       <!-- IMMAGINE GRANDE E ROBA -->
       <div class="row mt-5">
+          <!-- scheda -->
           <div id="container-main-scheda" class="col-8 shadow p-0">
               <div id="big-img-container">
                   <img src="../assets/materiale/single-post-img3.jpg" alt="">
@@ -29,7 +30,16 @@
                   </div>
               </div>
           </div>
-          <div class="col-4"></div>
+
+          <!-- al lato della scheda -->
+          <div class="col-4">
+              <div id="img-for-comment" class="d-flex text-center justify-content-center align-items-center">
+                  <div id="comment-container" class="justify-content-center d-flex">
+                       <h3>VIEW OUR LATEST RECIPES</h3>
+                  </div>
+                 
+              </div>
+          </div>
       </div>
   </div>
 </template>
@@ -72,11 +82,27 @@ export default {
             #big-img-container{
                 width: 100%;
                 height: 500px;
-            img{
+                img{
                 width: 100%;
                 height: 100%;
+                }
             }
     }
+
+    #img-for-comment{
+        background-image: url("../assets/materiale/ad-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+
+           #comment-container{
+               width: 50%;
+               
+                 h3{
+                     font-size: 1.3rem;      
+                 }
+           }
     }
     
     
