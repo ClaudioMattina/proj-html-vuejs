@@ -23,10 +23,12 @@
             </div>
         </div>
 
-        <div class="col-6">
-            <div class="img-list-containers">
+        <div class="col-6 d-flex flex-wrap">
+
+            <div v-for="(element,index) in images" :key="index" class="img-list-containers">
                 <img src="../assets/materiale/Mixed-fruits.jpg" alt="">
             </div>
+
         </div>
       </div>
   </div>
@@ -39,6 +41,27 @@ export default {
     data:function(){
         return{
             images:[
+                {
+                    url:"../assets/materiale/Mixed-fruits.jpg"
+                },
+                {
+                    url:"../assets/materiale/r-rachel-park-366508-unsplash-min.jpg"
+                },
+                {
+                    url:"../assets/materiale/r-michelle-tsang-500721-unsplash-min.jpg"
+                },
+                {
+                    url:"../assets/materiale/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg"
+                },
+                {
+                    url:"../assets/materiale/perfect-cosmopolitan-460x295.jpg"
+                },
+                {
+                    url:"../assets/materiale/fi2x-6-460x295.jpg"
+                },
+                {
+                    url:"../assets/materiale/r-brooke-lark-96398-unsplash-min-460x295.jpg"
+                },
                 {
                     url:"../assets/materiale/Mixed-fruits.jpg"
                 },
@@ -55,7 +78,7 @@ export default {
     }
 
     #big-card{
-        height: 500px;
+        height: 600px;
         width: 40%;
         background-color: white;
         padding: 0;
@@ -91,12 +114,20 @@ export default {
                 background-color: #fc7525;
                 padding: 10px;
                 font-size: 0.8rem;
+                
             }
         }
     }
 
     .img-list-containers{
-        
+        height: 150px;
+        width: calc(100% / 2);
+
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
     }
    
 
