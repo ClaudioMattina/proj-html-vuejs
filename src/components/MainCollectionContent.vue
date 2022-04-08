@@ -10,9 +10,9 @@
 
       <div class="row">
 
-        <div v-for="(element, index) in imagesList" :key="index" class="col-3">
+        <div v-for="(element, index) in imagesList" :key="index" class="col-3 my-wrapper">
           <div class="img-container">
-            <img :src="element.url" alt="">
+            <img src="../assets/materiale/drinks-recipes.png" alt="">
           </div>
           <div class="description d-flex justify-content-center align-items-center">
             <h5> {{ element.text }} </h5>
@@ -79,6 +79,7 @@ export default {
     .img-container{
       height: 150px;
       width: 100%;
+      background-color: white;
 
         img{
           width: 100%;
@@ -87,9 +88,11 @@ export default {
     }
 
     .description{
-
+      margin-bottom: 20px;
+      background-color: white;
       h5{
         font-size: 1rem;
+       
       }
     }
 
