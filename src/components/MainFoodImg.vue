@@ -12,6 +12,9 @@
                       <p> {{ element.paragraph }} </p>
                   </div>
               </div>
+              <div id="more-post" class="d-flex justify-content-center align-items-center">
+                  <a href="#">LOAD MORE POSTS</a>
+              </div>
           </div>
 
           <!-- social e commenti -->
@@ -26,12 +29,22 @@
                   <span><i class="fa-brands fa-pinterest-p"></i></span>
               </div>
 
-              <div class="popular-recent d-flex mt-5">
+              <div class="popular-recent d-flex my-5">
                   <div id="popular" class="active">
                       <a href="#">POPULAR</a>
                   </div>
                   <div id="recent">
                       <a href="#">RECENT</a>
+                  </div>
+              </div>
+
+              <div v-for="(element,index) in socialComment" :key="index" class="info d-flex align-items-center">
+                  <div class="info-img me-3">
+                      <img :src="element.url" alt="">
+                  </div>
+                  <div class="info-content">
+                      <h3>{{element.text}}</h3>
+                      <p> {{element.date}} </p>
                   </div>
               </div>
           </div>
@@ -78,6 +91,23 @@ export default {
                     paragraph:"By admin | March 25th, 2019"
                 },
             ],
+            socialComment:[
+                {
+                    url:require("../assets/materiale/single-post-img3.jpg"),
+                    text:"Food Corner: Top Japanese Restaurants for Sushi",
+                    date:"March 25th, 2019"
+                },
+                {
+                    url:require("../assets/materiale/singapore-featured-image.jpg"),
+                    text:"City Guide: Singapore",
+                    date:"March 25th, 2019"
+                },
+                {
+                    url:require("../assets/materiale/slide1-bg-66x66.jpg"),
+                    text:"6 Nutritionals Tips to Help Burn Body Fat",
+                    date:"March 25th, 2019"
+                },
+            ]
             /* aggiungere condizione active ai bottoni */
         }
     }
@@ -88,9 +118,19 @@ export default {
 
     .col-8{
         gap: 40px;
+        #more-post{
+            background-color: #f0eeeb;
+            width: 100%;
+            height: 50px;
+            a{
+                font-size: 1rem;
+                text-decoration: none;
+                color: black;
+            }
+        }
     } 
     .my-card{
-        width: calc((100% / 2) - 80px );
+        width: calc((100% / 2) - 30px );
         height: 350px;
         background-color: white;
         .img-container{
@@ -164,6 +204,28 @@ export default {
            .active{
                background-color: white;
            }
+        }
+        .info{
+            width: 100%;
+            height: 100px;
+            .info-img{
+                width: 60px;
+                height: 60px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                }
+            }
+            .info-content{
+                h3{
+                    font-size: 0.8rem;
+                }
+                p{
+                    font-size: 0.6rem;
+                    color: #6a6b6c;
+                }
+            }
         }
     }
     
