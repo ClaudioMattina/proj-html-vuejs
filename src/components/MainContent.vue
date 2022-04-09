@@ -53,13 +53,19 @@
           </div>
       </div>
 
-      
+      <MainFoodImg /> 
+
   </div>
 </template>
 
 <script>
+import MainFoodImg from './MainFoodImg.vue'
+
 export default {
-    name:"MainContentIndex"
+    name:"MainContentIndex",
+    components:{
+        MainFoodImg
+    }
 }
 </script>
 
