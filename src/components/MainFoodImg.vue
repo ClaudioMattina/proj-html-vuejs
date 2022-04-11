@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-
+                <!-- sottoscheda tweet -->
                <div class="row">
                    <div class="col-1 d-flex p-0">
                        <img id="my-logo" src="../assets/materiale/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="">
@@ -74,7 +74,7 @@
                            <p>@Theme_fusion</p>
                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis explicabo quis minima dolore placeat atque laudantium veritatis ratione! Molestiae, nisi consequuntur exercitationem quas ipsam iure vero sapiente ab nihil maxime.</p>
                        </div>
-
+                        <!-- blocco img dello sconto -->
                         <div id="img-sconto">
                             <img src="../assets/materiale/En2TRxLW4AEiWUN.jpeg" alt="">
                         </div>
@@ -85,12 +85,9 @@
                             </div>
                             <div class="mt-2"><p>21h</p></div>
                         </div>
-
                    </div>
                </div> 
-             </div>  
-
-             
+             </div> 
           </div>
 
          
@@ -195,7 +192,9 @@ export default {
             font-size: 0.8rem;
         }
     }
-
+    #more-post{
+        margin-bottom: 150px;
+    }
     .col-4{
         #search-bar{
             width: 100%;
@@ -275,7 +274,6 @@ export default {
             }
         }
     }
-
     #tweets{
         background-color: white;
         padding: 30px;
@@ -285,14 +283,12 @@ export default {
         #my-logo{
             height: 40px;
         }
-
         p{
             color: black;
             font-size: 0.8rem;
             }
         #tweets-title{
-            width: 100%;
-            
+            width: 100%;          
         }
     }
     #icon-tw-container{
