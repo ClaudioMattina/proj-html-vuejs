@@ -75,7 +75,16 @@
                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis explicabo quis minima dolore placeat atque laudantium veritatis ratione! Molestiae, nisi consequuntur exercitationem quas ipsam iure vero sapiente ab nihil maxime.</p>
                        </div>
 
-                       
+                        <div id="img-sconto">
+                            <img src="../assets/materiale/En2TRxLW4AEiWUN.jpeg" alt="">
+                        </div>
+                        <div id="condividi-like" class="d-flex justify-content-between">
+                            <div id="ciao" class="d-flex align-items-center mt-2">
+                                <img class="me-2" src="../assets/materiale/image (2).svg" alt="">
+                                <img src="../assets/materiale/image (3).svg" alt="">
+                            </div>
+                            <div class="mt-2"><p>21h</p></div>
+                        </div>
 
                    </div>
                </div> 
@@ -91,6 +100,7 @@
 </template>
 
 <script>
+
 export default {
     name:"MainFoodImgIndex",
 
@@ -285,7 +295,6 @@ export default {
             
         }
     }
-
     #icon-tw-container{
         height: 20px;
         width: 100%;
@@ -293,14 +302,30 @@ export default {
         margin-left: 5px;
         h5{
             font-size: 1rem;
-            font-weight: bold;
-            
-            
+            font-weight: bold;          
         }
         img{
-            height: 100%;
-            
+            height: 100%;  
         }
     }
+    #img-sconto{
+        width: 100%;
+        margin-top: 30px;
+        img{
+            width: 100%;
+            border-radius: 5x;
+        }
+    }
+
+    #condividi-like{
+            height: 20px;
+            #ciao{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+            }
+            
+        }
     
 </style>
