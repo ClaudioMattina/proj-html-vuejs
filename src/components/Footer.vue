@@ -3,6 +3,7 @@
     <FooterSubscribe/>
     <FooterImg/>
     <FooterInfo/>
+    <FooterCopyright/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import FooterSubscribe from './FooterSubscribe.vue'
 import FooterImg from './FooterImg.vue'
 import FooterInfo from './FooterInfo.vue'
+import FooterCopyright from './FooterCopyright.vue'
 export default {
     name: "FooterIndex",
     components:{
       FooterSubscribe,
       FooterImg,
-      FooterInfo
+      FooterInfo,
+      FooterCopyright
     }
 }
 </script>
