@@ -47,7 +47,44 @@
                       <p> {{element.date}} </p>
                   </div>
               </div>
+
+               <!-- tweets -->
+             <div id="tweets" class="col-4 mt-5">
+
+                <div class="d-flex justify-content-between">
+                    <div id="tweets-title d-flex">
+                        <p><span class="fs-3">Tweets</span> by <a href="#"> @Teme_Fusion </a></p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="mb-2" href="#"> <img src="../assets/materiale/image.svg" alt="icona delle info"> </a>
+                    </div>
+                </div>
+
+
+               <div class="row">
+                   <div class="col-1 d-flex p-0">
+                       <img id="my-logo" src="../assets/materiale/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="">
+                   </div>
+                   <div class="col-11">
+                       <div id="icon-tw-container" class="d-flex justify-content-between align-items-center">
+                           <h5>TemeFusion</h5>
+                           <img src="../assets/materiale/image (1).svg" alt="">
+                       </div>
+                       <div id="tweet-content">
+                           <p>@Theme_fusion</p>
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis explicabo quis minima dolore placeat atque laudantium veritatis ratione! Molestiae, nisi consequuntur exercitationem quas ipsam iure vero sapiente ab nihil maxime.</p>
+                       </div>
+
+                       
+
+                   </div>
+               </div> 
+             </div>  
+
+             
           </div>
+
+         
           
       </div>
   </div>
@@ -226,6 +263,43 @@ export default {
                     color: #6a6b6c;
                 }
             }
+        }
+    }
+
+    #tweets{
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 100%;
+
+        #my-logo{
+            height: 40px;
+        }
+
+        p{
+            color: black;
+            font-size: 0.8rem;
+            }
+        #tweets-title{
+            width: 100%;
+            
+        }
+    }
+
+    #icon-tw-container{
+        height: 20px;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 5px;
+        h5{
+            font-size: 1rem;
+            font-weight: bold;
+            
+            
+        }
+        img{
+            height: 100%;
+            
         }
     }
     
