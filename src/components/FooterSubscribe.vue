@@ -33,9 +33,7 @@ export default {
         background-position: center;
         background-size: cover;
         width: 100%;
-
-        #my-container{
-            
+        #my-container{        
             width: 70%;
             margin: 0 auto;
             text-align: center;
